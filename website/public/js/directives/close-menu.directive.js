@@ -10,7 +10,7 @@
     return {
       restrict: 'A',
       link: function($scope, element, attrs) {
-        element.on('click', function(event) {
+        element.on('blur', function(event) {
           if ($scope.$parent._expandedMenu) {
             $scope.$parent._expandedMenu.menu = null;
           }
